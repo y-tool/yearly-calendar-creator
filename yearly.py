@@ -455,73 +455,64 @@ with st.sidebar.expander('祝日の設定', False):
 with st.sidebar.expander('罫線の設定', False):
 
     # 外側
-    label_border_outer_visible = '外側罫線あり'
-    value_border_outer_visible = True
     border_outer_visible = st.checkbox(
-        label = label_border_outer_visible,
-        value = value_border_outer_visible,
+        label = '外側罫線あり',
+        value = True,
     )
     if border_outer_visible:
 
-        label_border_outer_type = '外側(線の種類)'
-        index_border_outer_type = 0
+        st.caption('種類')
         border_outer_type = st.selectbox(
-            label = label_border_outer_type,
+            label = '外側(線の種類)',
             options = list_border_type,
-            index = index_border_outer_type,
+            index = 0,
+            label_visibility = 'collapsed',
         )
-        label_border_outer_width = '外側(太さ)'
-        min_value_border_outer_width = 1
-        max_value_border_outer_width = 5
-        value_border_outer_width = 1
+        st.caption('太さ')
         border_outer_width = st.slider(
-            label = label_border_outer_width,
-            min_value = min_value_border_outer_width,
-            max_value = max_value_border_outer_width,
-            value = value_border_outer_width,
+            label = '外側(太さ)',
+            min_value = 1,
+            max_value = 5,
+            value = 1,
+            label_visibility = 'collapsed',
         )
-        label_border_outer_color = '外側(色)'
-        value_border_outer_color = '#000000'
+        st.caption('色')
         border_outer_color_html = st.color_picker(
-            label = label_border_outer_color,
-            value = value_border_outer_color,
+            label = '外側(色)',
+            value = '#000000',
+            label_visibility = 'collapsed',
         )
     else:
         border_outer_width = 0
 
-    label_border_inner_visible = '内側罫線あり'
-    value_border_inner_visible = True
+    # 内側
     border_inner_visible = st.checkbox(
-        label = label_border_inner_visible,
-        value = value_border_inner_visible,
+        label = '内側罫線あり',
+        value = True,
     )
-
     if border_inner_visible:
 
-        label_border_inner_type = '内側(線の種類)'
-        index_border_inner_type = 0
+        st.caption('種類')
         border_inner_type = st.selectbox(
-            label = label_border_inner_type,
+            label = '内側(線の種類)',
             options = list_border_type,
-            index = index_border_inner_type,
+            index = 0,
+            label_visibility = 'collapsed',
         )
-
-        label_border_inner_width = '内側(太さ)'
-        min_value_border_inner_width = 1
-        max_value_border_inner_width = 5
-        value_border_inner_width = 1
+        st.caption('太さ')
         border_inner_width = st.slider(
-            label = label_border_inner_width,
-            min_value = min_value_border_inner_width,
-            max_value = max_value_border_inner_width,
-            value = value_border_inner_width,
+            label = '内側(太さ)',
+            min_value = 1,
+            max_value = 5,
+            value = 1,
+            label_visibility = 'collapsed',
         )
 
-        label_border_inner_color = '内側(色)'
-        value_border_inner_color = '#000000'
+        st.caption('色')
         border_inner_color_html = st.color_picker(
-            label = label_border_inner_color,
-            value = value_border_inner_color,
+            label = '内側(色)',
+            value = '#000000',
+            label_visibility = 'collapsed',
         )
     else:
         border_inner_width = 0
