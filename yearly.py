@@ -1179,7 +1179,6 @@ with st.expander('当サイトについて'):
     <li>URL：<a href="https://y-tool.site" target="_blank">https://y-tool.site</a></li>
     <li>フォーラム：<a href="https://y-tool.site/contact-bbs/" target="_blank">連絡掲示板</a>、<a href="https://y-tool.site/request-bbs/" target="_blank">要望掲示板</a></li>
     </ul>
-    Y-TOOL
     """, unsafe_allow_html=True)
 
 list_date = create_list_date()
