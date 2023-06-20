@@ -1146,17 +1146,17 @@ with st.expander('作成した画像の利用について', False):
         <p>事前連絡、クレジット表記は不要です。</p>
         <br>
         <b>法人利用・商用の場合</b>
-        <p>事前連絡をした上で、利用したものに当サイトへのクレジット表記をお願いします。</p>
+        <p><a href="https://y-tool.site/contact-bbs/" target="_blank">連絡掲示板</a>に投稿をした上で、利用したものに当サイトへのクレジット表記をお願いします。</p>
         <p>クレジット表記例：Y-TOOL(https://y-tool.site/)</p>
         <br>
         <b>二次配布について</b>
-        <p>当サイトで作成した画像を第三者へ配布する場合は、事前連絡をお願いします。</p>
+        <p>当サイトで作成した画像を第三者へ配布する場合は、<a href="https://y-tool.site/contact-bbs/" target="_blank">連絡掲示板</a>に投稿をお願いします。</p>
     """, unsafe_allow_html=True)
 with st.expander('フォントについて'):
     st.write("""
     当サイトでは<a href="https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=OFL" target="_blank">SIL Open Font License</a>のフォントを使用しています。
 
-    フォント追加のご要望は問い合わせフォームからご連絡ください。
+    フォント追加は<a href="https://y-tool.site/request-bbs/" target="_blank">要望掲示板</a>からご依頼ください。
     <ul>
     <li>M PLUS 1p 提供：<a href="https://mplusfonts.github.io" target="_blank">M+ FONT様</a></li>
     <li>たぬゴ角 提供：<a href="https://tanukifont.com/tanugo/" target="_blank">たぬきフォント様</a></li>
@@ -1170,6 +1170,16 @@ with st.expander('フォントについて'):
     <li>しっぽり明朝 提供：<a href="https://fontdasu.com/shippori-mincho/" target="_blank">FONTDASU様</a></li>
     </ul>
 
+    """, unsafe_allow_html=True)
+
+with st.expander('当サイトについて'):
+    st.write("""
+    <ul>
+    <li>サイト名：Y-TOOL</li>
+    <li>URL：<a href="https://y-tool.site" target="_blank">https://y-tool.site</a></li>
+    <li>フォーラム：<a href="https://y-tool.site/contact-bbs/" target="_blank">連絡掲示板</a>、<a href="https://y-tool.site/request-bbs/" target="_blank">要望掲示板</a></li>
+    </ul>
+    Y-TOOL
     """, unsafe_allow_html=True)
 
 list_date = create_list_date()
