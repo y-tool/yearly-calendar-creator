@@ -1177,7 +1177,7 @@ with st.expander('当サイトについて'):
     <ul>
     <li>サイト名：Y-TOOL</li>
     <li>URL：<a href="https://y-tool.site" target="_blank">https://y-tool.site</a></li>
-    <li>フォーラム：<a href="https://y-tool.site/contact-bbs/" target="_blank">連絡掲示板</a>、<a href="https://y-tool.site/request-bbs/" target="_blank">要望掲示板</a></li>
+    <li>フォーラム：<a href="https://y-tool.site/contact-bbs/" target="_blank">連絡掲示板</a>、<a href="https://y-tool.site/request-bbs/" target="_blank">要望掲示板</a>、<a href="https://y-tool.site/bug-bbs/" target="_blank">不具合掲示板</a></li>
     </ul>
     """, unsafe_allow_html=True)
 
